@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script type="text/javascript">
+    window.onload = function() {
+      var teacherEmail = new URLSearchParams(window.location.search).get('teacherEmail');
+      var teamsUrl = "https://teams.microsoft.com/l/chat/0/0?users=" + teacherEmail;
+      window.open(teamsUrl, "_blank");
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting to Microsoft Teams...</p>
+</body>
+</html>
